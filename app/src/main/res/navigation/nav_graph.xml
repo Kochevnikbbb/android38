@@ -9,12 +9,20 @@
         android:id="@+id/characterFragment"
         android:name="com.nomad.android38.ui.CharacterFragment"
         android:label="fragment_character"
-        tools:layout="@layout/fragment_character" />
+        tools:layout="@layout/fragment_character" >
+        <action
+            android:id="@+id/action_characterFragment_to_screenFragment"
+            app:destination="@id/screenFragment" />
+    </fragment>
     <fragment
         android:id="@+id/locationFragment"
         android:name="com.nomad.android38.ui.LocationFragment"
         android:label="fragment_location"
-        tools:layout="@layout/fragment_location" />
+        tools:layout="@layout/fragment_location" >
+        <action
+            android:id="@+id/action_locationFragment_to_screenFragment3"
+            app:destination="@id/screenFragment" />
+    </fragment>
     <fragment
         android:id="@+id/screenFragment"
         android:name="com.nomad.android38.ui.ScreenFragment"
