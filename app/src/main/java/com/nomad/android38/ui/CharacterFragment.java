@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.fragment.NavHostFragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,6 +23,8 @@ public class CharacterFragment extends Fragment implements OnClick {
     private FragmentCharacterBinding binding;
     private CharacterAdapter adapter;
     private ArrayList<Charactersss> characters;
+    public final static String key = "dfgdgf";
+
 
 
     @Override
@@ -53,6 +56,10 @@ public class CharacterFragment extends Fragment implements OnClick {
 
     @Override
     public void onClick(Charactersss character) {
-
+        Bundle bundle = new Bundle();
+        bundle.putString(key,character.getLive());
+        bundle.putString(key,character.getName());
+        bundle.putInt(key,character.getImage());
+        NavHostFragment.findNavController(CharacterFragment.this).navigate(R.id.screenFragment, bundle);
     }
 }
