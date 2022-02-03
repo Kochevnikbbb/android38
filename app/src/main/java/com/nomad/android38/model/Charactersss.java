@@ -1,6 +1,8 @@
 package com.nomad.android38.model;
 
-public class Charactersss {
+import java.io.Serializable;
+
+public class Charactersss implements Serializable {
     private String name;
     private String live;
     private Integer image;

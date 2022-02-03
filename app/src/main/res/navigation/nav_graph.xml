@@ -27,5 +27,9 @@
         android:id="@+id/screenFragment"
         android:name="com.nomad.android38.ui.ScreenFragment"
         android:label="fragment_screen"
-        tools:layout="@layout/fragment_screen" />
+        tools:layout="@layout/fragment_screen" >
+
+        <argument android:name="kakugodno"
+            app:argType="com.nomad.android38.model.Charactersss"/>
+    </fragment>
 </navigation>

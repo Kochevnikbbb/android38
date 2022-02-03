@@ -75,9 +75,7 @@ public class LocationFragment extends Fragment implements OnClick {
 
     @Override
     public void onClick(Charactersss character) {
-        Bundle bundle = new Bundle();
-        bundle.putString(key,character.getLive());
-        bundle.putString(key,character.getName());
-        NavHostFragment.findNavController(LocationFragment.this).navigate(R.id.screenFragment,bundle);
+        NavHostFragment.findNavController(LocationFragment.this).navigate(LocationFragmentDirections
+                .actionLocationFragmentToScreenFragment3(character));
     }
 }

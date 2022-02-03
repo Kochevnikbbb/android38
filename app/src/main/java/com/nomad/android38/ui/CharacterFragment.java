@@ -56,10 +56,13 @@ public class CharacterFragment extends Fragment implements OnClick {
 
     @Override
     public void onClick(Charactersss character) {
-        Bundle bundle = new Bundle();
+        /*Bundle bundle = new Bundle();
         bundle.putString(key,character.getLive());
         bundle.putString(key,character.getName());
-        bundle.putInt(key,character.getImage());
-        NavHostFragment.findNavController(CharacterFragment.this).navigate(R.id.screenFragment, bundle);
+        bundle.putInt(key,character.getImage());*/
+//        CharacterFragmentDirections
+//        NavHostFragment.findNavController(CharacterFragment.this).navigate(R.id.screenFragment);
+        NavHostFragment.findNavController(CharacterFragment.this).navigate(CharacterFragmentDirections
+                .actionCharacterFragmentToScreenFragment(character));
     }
 }
