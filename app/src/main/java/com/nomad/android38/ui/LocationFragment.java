@@ -45,31 +45,26 @@ public class LocationFragment extends Fragment implements OnClick {
 
     private void loadData() {
         list = new ArrayList<>();
-        list.add(new Charactersss("Sashka Krasava","alive"));
-        list.add(new Charactersss("Sashka Krasava","alive"));
-        list.add(new Charactersss("Sashka Krasava","alive"));
-        list.add(new Charactersss("Sashka Krasava","alive"));
-        list.add(new Charactersss("Sashka Krasava","alive"));
-        list.add(new Charactersss("Sashka Krasava","alive"));
-        list.add(new Charactersss("Sashka Krasava","alive"));
-        list.add(new Charactersss("Sashka Krasava","alive"));
-        list.add(new Charactersss("Sashka Krasava","alive"));
-        list.add(new Charactersss("Sashka Krasava","alive"));
-        list.add(new Charactersss("Sashka Krasava","alive"));
-        list.add(new Charactersss("Sashka Krasava","alive"));
-        list.add(new Charactersss("Sashka Krasava","alive"));
-        list.add(new Charactersss("Sashka Krasava","alive"));
-        list.add(new Charactersss("Sashka Krasava","alive"));
-        list.add(new Charactersss("Sashka Krasava","alive"));
-        list.add(new Charactersss("Sashka Krasava","alive"));
-        list.add(new Charactersss("Sashka Krasava","alive"));
-        list.add(new Charactersss("Sashka Krasava","alive"));
-        list.add(new Charactersss("Sashka Krasava","alive"));
-        list.add(new Charactersss("Sashka Krasava","alive"));
-        list.add(new Charactersss("Sashka Krasava","alive"));
-        list.add(new Charactersss("Sashka Krasava","alive"));
-        list.add(new Charactersss("Sashka Krasava","alive"));
-        list.add(new Charactersss("Sashka Krasava","alive"));
+        list.add(new Charactersss("Earth (C-137)","Planet"));
+        list.add(new Charactersss("Abadango","Cluster"));
+        list.add(new Charactersss("Citadel of Ricks","Space station"));
+        list.add(new Charactersss("Worldender's lair","Planet"));
+        list.add(new Charactersss("Anatomy Park","Microverse"));
+        list.add(new Charactersss("Interdimensional Cable","TV"));
+        list.add(new Charactersss("Immortality Field Resort","Resort"));
+        list.add(new Charactersss("Post-Apocalyptic Earth","Planet"));
+        list.add(new Charactersss("Purge Planet","Planet"));
+        list.add(new Charactersss("Venzenulon 7","Planet"));
+        list.add(new Charactersss("Bepis 9","Planet"));
+        list.add(new Charactersss("Cronenberg Earth","Planet"));
+        list.add(new Charactersss("Nuptia 4","Planet"));
+        list.add(new Charactersss("Bird World","Planet"));
+        list.add(new Charactersss("Earth (5-126)","Planet"));
+        list.add(new Charactersss("Gromflom Prime","Planet"));
+        list.add(new Charactersss("Earth (Rpl. Dimension)","Planet"));
+        list.add(new Charactersss("Mr. Goldenfold's dream","Dream"));
+        list.add(new Charactersss("St. Gloopy Noops Hospital","Space station"));
+        list.add(new Charactersss("Giant's Town","Fantasy town"));
 
     }
 

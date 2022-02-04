@@ -46,22 +46,16 @@ public class CharacterFragment extends Fragment implements OnClick {
 
     private void loadData() {
     characters = new ArrayList<>();
-    characters.add(new Charactersss("Sashka Zver","Alive",R.drawable.rick));
-    characters.add(new Charactersss("Sashka Zver","Alive",R.drawable.rick));
-    characters.add(new Charactersss("Sashka Zver","Alive",R.drawable.rick));
-    characters.add(new Charactersss("Sashka Zver","Alive",R.drawable.rick));
-    characters.add(new Charactersss("Sashka Zver","Alive",R.drawable.rick));
+    characters.add(new Charactersss("Rick Sanchez","Alive",R.drawable.rick));
+    characters.add(new Charactersss("Morty Smith","Alive",R.drawable.morty));
+    characters.add(new Charactersss("Albert Einstein","Dead",R.drawable.albert));
+    characters.add(new Charactersss("Jerry Smith","Alive",R.drawable.jerry));
+    characters.add(new Charactersss("Sashka Zver","Alive",R.drawable.sashka));
 
     }
 
     @Override
     public void onClick(Charactersss character) {
-        /*Bundle bundle = new Bundle();
-        bundle.putString(key,character.getLive());
-        bundle.putString(key,character.getName());
-        bundle.putInt(key,character.getImage());*/
-//        CharacterFragmentDirections
-//        NavHostFragment.findNavController(CharacterFragment.this).navigate(R.id.screenFragment);
         NavHostFragment.findNavController(CharacterFragment.this).navigate(CharacterFragmentDirections
                 .actionCharacterFragmentToScreenFragment(character));
     }
